@@ -4,51 +4,45 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header style={{}}>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 1004,
-        padding: `0`,
-        paddingTop: `48px`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <StaticImage
-            src="../images/logo.twitchifier.png"
-            width={220}
-            quality={70}
-            formats={["auto", "webp", "avif"]}
-            alt="Twitchifier Logo"
-          />
-        </Link>
-      </h1>
-      <div>
-        <nav>
-          <ul style={{ display: "flex", flex: 1 }}>
-            {menuLinks.map((link) => (
+  <header className="header">
+    <h1>
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        <StaticImage
+          src="../images/logo.twitchifier.png"
+          width={220}
+          quality={70}
+          formats={["auto", "webp", "avif"]}
+          alt="Twitchifier Logo"
+        />
+      </Link>
+    </h1>
+    <div>
+      <nav>
+        <ul className="navigation">
+          {menuLinks.map((link) => (
+            <Link
+              to={link.link}
+              activeClassName="active"
+              className="navigationItem"
+              key={link.name}
+            >
               <li
-                key={link.name}
                 style={{
                   listStyleType: `none`,
-                  padding: `1rem`,
                 }}
               >
-                <Link style={{ color: `white` }} to={link.link}>
-                  {link.name}
-                </Link>
+                {link.name}
               </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+            </Link>
+          ))}
+        </ul>
+      </nav>
     </div>
   </header>
 );
