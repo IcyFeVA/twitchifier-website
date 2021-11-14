@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div>
+    <div style={{padding: `0 16px`}}>
       <div id="background"></div>
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
@@ -45,12 +45,12 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            marginTop: `2rem`,
+            marginTop: `4rem`,
           }}
         >
           © {new Date().getFullYear()}
           {` `}
-          <a href="https://www.twitchifier.com">Twitchifier</a>
+          <a href="https://www.icyfeva.com" target="_blank">IcyFeVA</a> | Need help? support[at]twitchifier.com
         </footer>
       </div>
     </div>

@@ -670,3 +670,27 @@ html {
   left: 32px;
   font-size: 11px !important;
 }
+
+.checkout {
+  background: #16161D;
+  border: 2px solid #7B61FF;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 16px;
+  text-transform: uppercase;
+}
+.checkout:hover {
+  filter: hue-rotate(59deg);
+  cursor: pointer;
+}
+
+.info {
+  background-color: #005450;
+  padding: 16px;
+}
+
+.highlight {
+  color: lightskyblue
+}
