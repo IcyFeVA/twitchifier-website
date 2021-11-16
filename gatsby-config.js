@@ -14,8 +14,8 @@ module.exports = {
         link:'/about'
       },
       {
-        name:'buy',
-        link:'/buy'
+        name:'download',
+        link:'/download'
       }
     ]
   },

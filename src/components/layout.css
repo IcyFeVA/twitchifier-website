@@ -622,7 +622,6 @@ html {
 
 .navigation {
   background-color: #1b2733;
-  width: 300px;
   height: 28px;
   display: flex;
   justify-content: space-between;
