@@ -10,7 +10,7 @@ const AboutPage = () => (
     <Seo title="Download Twitchifier" />
     <h1 style={{marginTop: `64px`}}>Download Twitchifier</h1>
     <p style={{fontSize: `1.1rem`, marginBottom: `24px`, lineHeight: `170%`}}>Twitchifier is currently available for <span class="highlight">Windows</span> and <span class="highlight">Linux (AppImage)</span>. A version for Mac might come in the near future.</p>
-    <a href="https://mega.nz/file/1A5QAJrT#ezVrYVf8g8-r_oDNxc7VfIz5GYaFJmCUIGIrhjEFYTU" target="_blank">
+    <a href="https://mega.nz/folder/dMwCSA6T#bH6RZX3s9tFFvIj9cUyivw" target="_blank">
       <button className="checkout" role="link">
         Download
       </button>
