@@ -16,8 +16,6 @@ const AboutPage = () => (
         Buy now
       </button>
     </a>
-    {/* https://buy.stripe.com/4gw5nja2v8b6bBK5kk 12.90 */}
-    {/* https://buy.stripe.com/test_6oE9Cr2CVacma4M144 Test mode */}
   </Layout>
 );
 
