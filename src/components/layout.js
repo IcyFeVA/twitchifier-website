@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
+import Footer from "./footer";
 import "./layout.css";
 
 const Layout = ({ children }) => {
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div style={{padding: `0 16px`}}>
+    <div style={{ padding: `0 16px`, height: `100%` }}>
       <div id="background"></div>
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
@@ -42,17 +43,15 @@ const Layout = ({ children }) => {
           padding: `0`,
         }}
       >
-        <main>{children}</main>
-        <footer
+        <main
           style={{
-            marginTop: `4rem`,
+            marginBottom: `32px`,
           }}
         >
-          © {new Date().getFullYear()}
-          {` `}
-          <a href="https://www.icyfeva.com" target="_blank">IcyFeVA</a> | Need help? support[at]twitchifier.com
-        </footer>
+          {children}
+        </main>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -595,7 +595,12 @@ pre tt:after {
 }
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .header {
@@ -604,6 +609,18 @@ html {
   margin: 0 auto;
   max-width: 1004px;
   margin-top: 48px;
+}
+
+/* footer {
+  position: sticky;
+  top: 100vh;
+} */
+
+
+footer > .content {
+  margin: 0 auto;
+  max-width: 1004px;
+  height: 100px;
 }
 
 #background {
@@ -672,8 +689,8 @@ html {
 }
 
 .checkout {
-  background: #16161D;
-  border: 2px solid #7B61FF;
+  background: #16161d;
+  border: 2px solid #7b61ff;
   border-radius: 4px;
   color: white;
   font-size: 1.5rem;
@@ -692,5 +709,5 @@ html {
 }
 
 .highlight {
-  color: lightskyblue
+  color: lightskyblue;
 }
