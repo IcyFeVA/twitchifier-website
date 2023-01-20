@@ -16,7 +16,7 @@ const AboutPage = () => (
       </button>
     </a>
     <p className="info" style={{marginTop: `64px`}}>If this app is useful to you, or if you just want to show support, donations are always welcome :)</p>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=32YAVS6TP3ZUU" target="_blank">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=UUNUPVB2ES8FS" target="_blank">
       <button className="checkout" role="link">
         Donate Now
       </button>
