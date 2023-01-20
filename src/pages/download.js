@@ -15,7 +15,7 @@ const AboutPage = () => (
         Download
       </button>
     </a>
-    <p className="info" style={{marginTop: `64px`}}>If this app is useful to you, or if you just want to show support, donations are always welcome :)</p>
+    <p className="info" style={{marginTop: `64px`}}>Donations are always welcome. In fact, as of February 2023 my job will be redundant and me, my wife and kids appreciate any donation.</p>
     <a href="https://www.paypal.com/donate/?hosted_button_id=UUNUPVB2ES8FS" target="_blank">
       <button className="checkout" role="link">
         Donate Now
